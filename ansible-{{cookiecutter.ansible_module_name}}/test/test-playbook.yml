@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: yes
+  become: no
+  tasks:
+    - {{cookiecutter.ansible_namespace}}.{{cookiecutter.ansible_collection_name}}.{{cookiecutter.ansible_module_name}}:
+        bits: 10
+        _rebuild_golang_module: yes
+      register: prime
+    - debug:
+        var: prime

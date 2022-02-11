@@ -1,0 +1,8 @@
+{
+"ansible_collection_name": "samples",
+"ansible_module_name": "generate_prime",
+"ansible_namespace": "acme",
+"author_email": "jane@doe.mail",
+"author_name": "Jane Doe",
+"description": "a cross-platform golang module for ansible"
+}
